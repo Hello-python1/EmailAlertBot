@@ -97,7 +97,7 @@ async def handle_message(update: Update, context: CallbackContext) -> None:
         c.execute("UPDATE user_credentials SET keywords = ? WHERE user_id = ?", (user_input, user_id))
         conn.commit()
         del user_states[user_id]
-        await update.message.reply_text("Thank you! Your keywords have been saved. I will now forward emails matching these keywords.")
+        await update.message.reply_text("Thank you! Your keywords have been saved. I will now forward emails matching these keywords. /n To continue with analytics visit https://emailalertbot.onrender.com")
 
 def main():
     app = Application.builder().token(TOKEN).build()
