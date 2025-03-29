@@ -1,6 +1,9 @@
 flask
 gunicorn
-requests
-python-telegram-bot
-pymongo
 pandas
+requests
+pymongo
+bs4
+scikit-learn
+python-telegram-bot
+bcrypt
